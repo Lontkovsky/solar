@@ -1,0 +1,110 @@
+/**
+ * Widget Services Row CSS
+ */
+@import '../../../framework-customizations/extensions/services/static/css/services-style.css';
+
+.services-row {
+}
+
+.services-row .services-list {
+    font-size: 0;
+}
+.services-row .services-list li {
+    font-size: 14px;
+    font-size: 1.4rem;
+    display: inline-block !important;
+    vertical-align: top;
+}
+
+.services-row .services-list--items-1 > li {
+    width: 100%;
+}
+
+.services-row .services-list--items-2 > li {
+    width: 50%;
+}
+
+.services-row .services-list--items-3 > li {
+    width: 33.3333%;
+}
+
+@media screen and (max-width: 767px) {
+
+    .services-row .services-list--items-3 > li {
+        width: 100%;
+    }
+
+}
+
+.services-row.type1 .services-item--title a {
+    display: block;
+}
+
+/* Type 2 */
+
+.services-row.type2 .fw-iconbox-title {
+    overflow: hidden;
+    /*max-height: 48px;*/
+    max-height: 48px;
+    min-height: 48px;
+    text-transform: uppercase;
+}
+
+.services-row.type2 .services-list li {
+    margin-top: 30px;
+}
+
+.services-row.type2 .services-item--icon {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+/* Type 3 */
+
+.services-row.type3 {
+}
+
+.services-row.type3 .services-list li {
+    margin-top: 30px;
+}
+
+.services-row.type3 .fw-iconbox-title {
+    overflow: hidden;
+    /*max-height: 24px;*/
+    max-height: 24px;
+    min-height: 24px;
+    text-transform: uppercase;
+}
+
+.services-row.type3 .fw-iconbox-text {
+    overflow: hidden;
+    /*max-height: 48px;*/
+    max-height: 48px;
+    min-height: 48px;
+}
+
+.services-row.type3 .services-item--icon {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 1.9445;
+}
+
+/* */
+
+.services-row.type3 .services-list > li {
+    width: 50%;
+}
+
+.services-row.type2 .services-list > li {
+    width: 33.3333%;
+}
+
+@media screen and (max-width: 767px) {
+
+    .services-row.type3 .services-list > li,
+    .services-row.type2 .services-list > li {
+        width: 100%;
+    }
+
+}

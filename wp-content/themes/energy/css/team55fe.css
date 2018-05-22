@@ -1,0 +1,408 @@
+/**
+ * Team Member / Custom Content Team Plugin
+ */
+
+.single-team_member .entry-content {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.archive.post-type-archive-team_member .content-area {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+@media (min-width: 1440px) {
+
+    .single-team_member .entry-content {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .archive.post-type-archive-team_member .content-area {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.member-team-wrapper.archive {
+    font-size: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -70px;
+}
+
+.member-team-wrapper.archive article {
+    font-size: 14px;
+    font-size: 1.4rem;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    margin-top: 70px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .member-team-wrapper.archive article {
+        width: 50%;
+    }
+}
+
+.member-row1 {
+    margin-bottom: 22px;
+}
+
+.member-thumbnail {
+}
+
+.member-thumbnail img {
+}
+
+.member-info {
+}
+
+.member-info-inner {
+    padding: 23px 30px;
+    background-color: #f5f5f5;
+    border-bottom: solid 3px #fcca03;
+}
+
+.member-info hr {
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: 23px;
+    margin-bottom: 14px;
+    background-color: #e1e1e1;
+}
+
+.member-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #333333;
+}
+
+.member-position {
+    color: #fcca03;
+}
+
+.member-contacts {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    color: #a4a4a4;
+}
+
+.member-contacts li + li {
+    margin-top: 5px;
+}
+
+.member-contacts .rt-icon {
+    font-size: 16px;
+    vertical-align: top;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    text-align: left;
+    position: relative;
+    margin-right: 5px;
+    top: -1px;
+    color: #333333;
+}
+
+.member-contacts .rt-icon:before {
+    vertical-align: top;
+    text-align: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px 0 0;
+}
+
+.member-address {
+}
+
+.member-phone {
+}
+
+.member-email {
+}
+
+.member-social {
+    padding-left: 0;
+}
+
+.member-social li {
+    float: none;
+    display: inline-block;
+}
+
+.member-contacts + .member-social {
+    margin-top: 24px;
+}
+
+/**
+ * Team Member -- Tabs
+ */
+
+.member-content-tabs .nav-tabs {
+    border-bottom: 5px solid #fcca03;
+}
+
+.member-content-tabs .nav-tabs > li {
+    margin-bottom: 0;
+}
+
+.member-content-tabs .nav-tabs > li > a {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    /*text-transform: uppercase;*/
+    padding: 13px 28px 13px 28px;
+    border-bottom: none !important;
+    border-radius: 0 0 0 0;
+    border-color: #e6e4e4;
+    background-color: #ffffff;
+    color: #a4a4a4;
+}
+
+.member-content-tabs .nav-tabs > li > a:hover,
+.member-content-tabs .nav-tabs > li > a:focus {
+    color: #333333;
+}
+
+.member-content-tabs .nav-tabs > li.active > a,
+.member-content-tabs .nav-tabs > li.active > a:hover,
+.member-content-tabs .nav-tabs > li.active > a:focus {
+    border-color: #fcca03;
+    background-color: #fcca03;
+    color: #333333;
+}
+
+/*.member-content-tabs .tab-content {*/
+.member-content-tabs .tab-content .tab-pane {
+    padding: 23px 30px;
+    border-radius: 0 0 0 0;
+    background-color: #ffffff;
+
+    /* energy drop shadow */
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+}
+
+.member-content-tabs .tab-content .tab-pane#member-content > :last-child {
+    margin-bottom: 0;
+}
+
+.member-content-tabs .tab-content .tab-pane#member-skills {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5715;
+    text-transform: uppercase;
+}
+
+.member-content-tabs .tab-content .tab-pane#member-skills .progress {
+    border-radius: 2px;
+    margin-bottom: 22px;
+}
+
+.member-content-tabs .tab-content .tab-pane#member-skills .progress:last-child {
+    margin-bottom: 11px;
+}
+
+.member-content-tabs .tab-content .tab-pane#member-skills .progress-bar {
+    background-color: #fcca03;
+}
+
+.member-content-tabs .tab-content .tab-pane#message-form {
+}
+
+.member-content-tabs #cct_contact_error {
+    margin-bottom: 22px;
+}
+
+.member-content-tabs #cctContactForm ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.member-content-tabs #cctContactForm ul li {
+    margin-bottom: 27px;
+}
+
+.member-content-tabs #cctContactForm ul li:last-child {
+    margin-bottom: 0;
+}
+
+.member-content-tabs #cctContactForm ul li label {
+    display: block;
+}
+
+.member-content-tabs #cctContactForm input[type="text"],
+.member-content-tabs #cctContactForm input[type="email"],
+.member-content-tabs #cctContactForm input[type="tel"],
+.member-content-tabs #cctContactForm input[type="number"],
+.member-content-tabs #cctContactForm input[type="url"],
+.member-content-tabs #cctContactForm input[type="password"],
+.member-content-tabs #cctContactForm input[type="search"],
+.member-content-tabs #cctContactForm input[type="date"],
+.member-content-tabs #cctContactForm input[type="time"],
+.member-content-tabs #cctContactForm input[type="datetime-local"],
+.member-content-tabs #cctContactForm input[type="month"],
+.member-content-tabs #cctContactForm textarea {
+    width: 100%;
+}
+
+/**
+ * Team Member -- Archive
+ */
+
+.archive .fw-team {
+}
+
+.fw-heading.team-fw-heading,
+.fw-heading.team-fw-heading.fw-heading-w-subtitle {
+    text-align: center;
+    margin-bottom: 0;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-type-archive-team_member .fw-special-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.125;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.post-type-archive-team_member .fw-special-subtitle {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.9286;
+    display: block;
+    color: #ffffff;
+}
+
+.archive .fw-team .fw-team-image {
+}
+
+.archive .fw-team .fw-team-image img {
+
+}
+
+.archive .fw-team .fw-team-inner {
+    overflow: hidden;
+    padding-top: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+
+}
+
+.archive .fw-team .fw-team-inner :last-child {
+    margin-bottom: 0;
+}
+
+.archive .fw-team .fw-team-inner .social-quote {
+    overflow: hidden;
+    max-height: 72px;
+    margin-bottom: 24px;
+}
+
+.archive .fw-team .fw-team-name {}
+
+.archive .fw-team .fw-team-name h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.archive .fw-team .fw-team-name span {
+    color: #fcca03;
+}
+
+.archive .fw-team .fw-team-text {
+    overflow: hidden;
+    max-height: 72px;
+}
+
+.archive .fw-team .fw-team-text p {}
+
+.archive .fw-team .fw-team-inner hr {
+    margin-top: 22px;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 14px;
+}
+
+.archive .fw-team .fw-team-social .member-contacts {
+    margin-bottom: 7px;
+}
+
+.member-social li a,
+.member-social li a::before,
+.fw-team .social-navigation a,
+.fw-team .social-navigation a::before {
+    color: #fcca03;
+}
+
+.member-social li a:hover,
+.member-social li a:hover::before,
+.fw-team .social-navigation li a:hover,
+.fw-team .social-navigation li a:hover::before {
+    color: #333333;
+}
+
+/* Responsive and widget placements */
+
+.footer .member-info hr {
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 479px) {
+
+    .member-content-tabs .nav-tabs {
+        border-bottom-width: 1px;
+        border-bottom-color: #e6e4e4;
+    }
+
+    .member-content-tabs .nav-tabs > li {
+        display: block;
+        float: none;
+    }
+
+    .member-content-tabs .nav-tabs > li > a {
+        margin-right: 0;
+    }
+    
+}
+
+/**
+ * RTL
+ */
+
+.rtl .member-contacts{padding-right:0; padding-left: initial;}
+.rtl .member-contacts .rt-icon {margin-right: initial; margin-left: 5px; text-align: right;}
+.rtl .member-contacts .rt-icon:before{margin:0 0 0 3px;}
+.rtl .member-social{padding-right:0; padding-left: initial;}
+.rtl .member-social li {float: none; display: inline-block;}
+.rtl .member-content-tabs .nav-tabs > li > a{padding:14px 19px 13px 19px;border-radius:2px 2px 0 0;}
+.rtl .member-content-tabs .tab-content .tab-pane{border-radius:0 0 5px 5px;}
+.rtl .member-content-tabs #cctContactForm ul{padding-right:0; padding-left: initial;}

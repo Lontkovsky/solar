@@ -1,0 +1,188 @@
+/**
+ * Recent Projects carousel
+ */
+
+.widget_recent_projects_carousel {
+    padding: 0;
+}
+
+.widget_recent_projects_carousel .owl-carousel .owl-controls {
+    margin-top: 0;
+    position: relative;
+}
+
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-prev,
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-next {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.7143;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    color: #a4a4a4;
+}
+
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-prev:hover,
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-next:hover {
+    border: none;
+    background-color: transparent;
+    color: #fcca03;
+}
+
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-prev {
+
+}
+
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-next {
+    float: left;
+    margin-left: 60px;
+}
+
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-prev .rpj-carousel__icon {
+    margin-right: 12px;
+}
+
+.widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-next .rpj-carousel__icon {
+    margin-left: 12px;
+}
+
+/* Recent Projects carousel -- with title */
+
+/* end: with title*/
+
+.rpj-carousel__image {
+    margin-bottom: 20px;
+}
+
+.rpj-carousel__image a {
+    position: relative;
+    display: block;
+}
+
+.rpj-carousel__image a::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(252, 202, 3, 0.8);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.rpj-carousel__image a::after {
+    font-family: Flaticon;
+    content: '\f103';
+    font-size: 30px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-left: -30px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    color: #303030;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.rpj-carousel__image a:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.rpj-carousel__image a:hover::after {
+    margin-left: -15px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.rpj-carousel__image a::before,
+.rpj-carousel__image a::after,
+.rpj-carousel__image a:hover::before,
+.rpj-carousel__image a:hover::after {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.rpj-carousel__image img {
+}
+
+/* Recent Projects carousel -- Title */
+
+.rpj-carousel .owl-controls {
+    position: relative !important;
+}
+.rpj-carousel .owl-nav {
+    position: relative !important;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+.rpj-carousel .owl-dots {
+    position: relative !important;
+    bottom: auto;
+    clear: both;
+}
+
+
+
+/* Disable: Animate/Transition */
+
+.transition--off {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/* Animate/Transition */
+
+.transition--on {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/**
+ * Responsive and widget placements
+ */
+
+/* Footer widget */
+
+.footer .widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-prev,
+.footer .widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-next {
+    background-color: transparent;
+    color: #8c8c8c;
+}
+
+.footer .widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-prev:hover,
+.footer .widget_recent_projects_carousel .owl-carousel .owl-controls .owl-nav .owl-next:hover {
+    color: #ffffff;
+}
+
+.footer .rpj-carousel .owl-dots .owl-dot span {
+    border-color: #8c8c8c;
+}
+
+.footer .rpj-carousel .owl-dots .owl-dot.active span,
+.footer .rpj-carousel .owl-dots .owl-dot:hover span {
+    border-color: #8c8c8c;
+    background: #8c8c8c;
+}
+
+.footer__widgets-row .widget_recent_projects_carousel {
+    padding-bottom: 40px;
+}

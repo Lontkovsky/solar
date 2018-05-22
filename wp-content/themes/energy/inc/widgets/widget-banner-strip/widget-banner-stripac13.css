@@ -1,0 +1,72 @@
+/**
+ * Banner strip
+ */
+
+.widget.widget_banner_strip {
+    overflow: hidden;
+    padding: 5px 10px;
+    background-color: #ffffff;
+}
+
+.banner-strip__row { /* .widget_banner_strip > .row */
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.banner-strip__3,
+.banner-strip__2,
+.banner-strip__1 { /* .widget_banner_strip div[class*="col-"] */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.banner-strip {}
+.banner-strip__content {
+    padding: 5px 0;
+}
+.banner-strip__content a {
+    display: block;
+    text-align: center;
+}
+.banner-strip__content a img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/**
+ * Responsive and widget placements
+ */
+
+.widget-width__full .widget.widget_banner_strip {
+    background-color: #eeeeee;
+}
+
+.footer .widget.widget_banner_strip {
+    padding: 0;
+    background-color: transparent;
+}
+
+.footer .banner-strip__content a {
+    text-align: left;
+}
+
+.footer .banner-strip__content {
+    padding: 0;
+}
+
+/* Make banners in one column */
+.widget-width__side .banner-strip__row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.widget-width__side .banner-strip__3,
+.widget-width__side .banner-strip__2,
+.widget-width__side .banner-strip__1 {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.widget-width__side .banner-strip__3 + .banner-strip__3,
+.widget-width__side .banner-strip__2 + .banner-strip__2 {
+    margin-top: 10px;
+}
